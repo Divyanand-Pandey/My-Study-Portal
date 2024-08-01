@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="table.css">
+  <link rel="icon" href="Img/favicon.ico" type="image/x-icon">
+  <style>
+    .liveclass {
+      /* background-color: rgb(38, 197, 144);  */
+      font-weight: bold;
+      color: black;
+      text-align: center;
+    }
+  </style>
+  <title>My Study Portal</title>
+</head>
+
+<body class="unselectable">
+
+  <div id="greeting" class="greeting"></div>
+  <div id="date" class="date"></div>
+  <div id="countdown" class="countdown"></div>
+  <div id="hoursLeft" class="hoursLeft"></div>
+
+  <div class="popup-overlay" id="imagePopup" style="display: none;">
+    <div class="popup-content">
+      <img src="C:\Users\rppan\Downloads\test.jpg" alt="Image" width="1024px">
+      <button id="closePopup">✕</button>
+    </div>
+  </div>
+
+  <div class="alert" id="reminder"></div>
+
+  <div class="links">
+
+    <a href="#" id="mathsChapternow" style="font-size: 18px;"><b> <u>MATHEMATICS</u></b> <br> Determinants !</a>
+
+    <a href="#" id="mathsChapterlast"> <b>Last: </b> Trigonometry !</a>
+
+    <a href="#" id="physicsChapter" style="font-size: 15.5px;"> <b> <u>PHYSICS</u></b> <br> Center Of Mass & Collison
+    </a>
+
+    <a href="#" id="physicsLast"> <b>Last: </b> Circular Motion</a>
+
+    <a href="#" id="inorganicChapter" style="font-size: 15.5px;"> <b> <u>INORGANIC</u></b> <br>Coordination Compound</a>
+
+    <a href="#" id="ioclast"> <b>Last: </b>Chemical Bonding</a>
+
+    <a href="#" id="physicalChapter"> <b> <u>PHYSICAL</u></b> <br /> Redox Reaction </a>
+    <a href="#" id="polast"><b>Last: </b> Atomic Structure</a>
+
+    <a href="#" id="organicChapter"><b> <u>ORGANIC</u></b> <br> IUPAC Nomenclature</a>
+    <a href="#" id="oclast"><b>Last: </b> None</a>
+
+    <!---------------------------------------------------------------------------------------------------------------------------------------->
+
+    <a href="https://www.pw.live/study/batches/study" id="liveClassLink"> <b>Today's Live Class</b></a>
+
+    <a href="https://www.pw.live/study/batches/prayas-jee-2-0-2025-525250/batch-overview?activeSection=Tests&childUrl=%2Fbatch%2F65ddb1c67520b70018241fe9%2Ftest"
+      id="test">Tests</a>
+
+    <a href="https://www.pw.live/study/batches/prayas-jee-2-0-2025-525250/batch-overview/batch-doubts" target="_blank "
+      id="doubts">My Doubts</a>
+
+    <a href="https://www.pw.live/study/batches/study/my-dashboard?coming_source=allclasses" id="dashboard">My
+      Dashboard</a>
+
+    <a href="file:///C:/Users/rppan/OneDrive/Documents/DivyCoder%20!!!/JEE%20Mains/Modules/" id="moduleLink">Module
+      Link</a>
+
+    <a href="C:\Users\rppan\Downloads" id="dppBattle">Notes</a>
+
+    <a href="https://www.pw.live/study/batches/prayas-jee-2-0-2025-525250/batch-overview/announcements?came_from=batch_clubbing"
+      id="announcement">Announcement</a>
+
+
+    <a href="Periodic_Table/dist/index.html" id="periodicTable">Periodic Table</a>
+
+    <a href="https://www.pw.live/study/batches/prayas-jee-2-0-2025-525250/subjects/notices-640749/subject-topics/topics/lecture-planner-%7C%7C-only-pdf-569379/contents?came_from=study&subject=Notices&batchSubjectId=65ddb1c6484cb3001823b2db&querySubjectId=&topic=Lecture%20Planner%20%7C%7C%20Only%20PDF&chapterId=6658552812eb85e6ab7c7090&activeTab=Notes"
+      id="Test_Planner">Planner</a>
+  </div>
+
+  <table id="objectiveTable">
+    <thead>
+      <tr>
+        <th>TIME</th>
+        <th>OBJECTIVES</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>06:00 AM - 08:00 AM</td>
+        <td>Revision of All Subjects</td>
+      </tr>
+      <tr>
+        <td class="liveclass" style="background-color: #ff9100;">09:00 AM - 11:00 AM</td>
+        <td>Inorganic Chemistry Class Time</td>
+      </tr>
+      <tr>
+        <td class="liveclass" style="background-color: #fff; color: rgb(29, 42, 226); ">
+          11:00 AM - 01:00 PM</td>
+
+        <td>Physics Class Time</td>
+      </tr>
+      <tr>
+        <td class="liveclass" style="background-color: #0dd617">01:30 PM - 04:30 PM</td>
+        <td>Mathematics Class Time</td>
+      </tr>
+      <tr>
+        <td>09:00 PM - 09:07 PM</td>
+        <td>Ho ja yrr</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <button id="addRowButton" class="newrow">New Task !</button>
+
+  <div id="timeEntryModal" class="modal">
+    <div class="modal-content">
+        <span class="close">✕</span>
+        <label for="startHour">Start Time:</label>
+        <select id="startHour">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select>:
+        <select id="startMinute">
+            <option value="00">00</option>
+            <option value="15">15</option>
+            <option value="30">30</option>
+            <option value="45">45</option>
+        </select>
+        <select id="startAmPm">
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+        </select>
+        <br>
+        <label for="endHour">End Time:</label>
+        <select id="endHour">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select>:
+        <select id="endMinute">
+            <option value="00">00</option>
+            <option value="15">15</option>
+            <option value="30">30</option>
+            <option value="45">45</option>
+        </select>
+        <select id="endAmPm">
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+        </select>
+        <br>
+        <label for="objective">Objective:</label>
+        <input type="text" id="objective">
+        <br>
+        <button id="saveRowButton" style="margin-top: 10px; transform: translateX(345%);" > Do it !!!</button>
+    </div>
+</div>
+
+
+    <script src="table.js"></script>
+
+  <script>
+    // You can dynamically generate the date strings or hardcode them
+    const dateStrings = ["21/07", "04/08", "14/08", "01/09", "15/09", "29/09", "13/10", "27/10", "10/11", "24/11", "08/12", "22/12", "05/01", "19/01", "16/02", "02/03", "16/03", "23/03", "30/03", "20/04", "04/05", "11/04", "18/05"];
+
+    // Get the current date
+    const currentDate = new Date();
+
+    // Find the first upcoming date
+    let firstUpcomingDate = null;
+    for (const dateString of dateStrings) {
+      const [day, month] = dateString.split("/");
+      const date = new Date(currentDate.getFullYear(), month - 1, day); // Month is 0-indexed
+
+      if (date > currentDate && (!firstUpcomingDate || date < firstUpcomingDate)) {
+        firstUpcomingDate = date;
+      }
+    }
+
+    if (firstUpcomingDate) {
+      const daysRemaining = Math.ceil((firstUpcomingDate - currentDate) / (1000 * 60 * 60 * 24));
+      const alertMessage = `Next Test on ` + `"${firstUpcomingDate.toDateString().bold()}"`.bold() + `. Only ` + `${daysRemaining}`.bold() + ` days remaining!`;
+      document.getElementById("reminder").innerHTML = alertMessage;
+
+      if (daysRemaining <= 6) {
+        document.getElementById('imagePopup').style.display = 'block';
+      }
+
+    } else {
+      document.getElementById("reminder").textContent = "No upcoming dates found.";
+    }
+
+
+
+    // Function to close the alert
+    function closeAlert() {
+      const alertElement = document.getElementById("reminder");
+      alertElement.style.display = "none";
+    }
+
+  </script>
+  <script src="script.js">
+
+  </script>
+  <script src="links.js"></script>
+  <script>const allLinks = document.querySelectorAll('a');
+
+    // Loop through each link and set the target attribute
+    allLinks.forEach(link => {
+      link.setAttribute('target', '_blank'); // '_blank' opens the link in a new tab
+    });</script>
+
+  <script>
+    // Select the alert element
+    const alertElement = document.querySelector('.alert');
+
+    // Show the alert (slide it down)
+    alertElement.style.top = '35px'; // Adjust the desired vertical position
+
+    // Hide the alert after 3 seconds
+    setTimeout(function () {
+      alertElement.style.top = '-100px'; // Slide it back up and hide
+    }, 3000);
+  </script>
+
+
+</body>
+
+</html>

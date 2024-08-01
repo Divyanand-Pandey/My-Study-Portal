@@ -1,0 +1,515 @@
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    margin: 0px 10px;
+    position: relative;
+    background-color: rgb(0, 0, 33);
+    color: #ffffff;
+
+}
+
+.unselectable {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+#physicsChapter,
+#physicsLast,
+#physicalChapter,
+#inorganicChapter,
+#organicChapter,
+#mathsChapternow,
+#mathsChapterlast,
+#ioclast,
+#polast,
+#oclast {
+    margin-top: 55px;
+    position: absolute;
+    left: 10px;
+}
+
+
+#mathsChapternow {
+    top: calc(5% + 0px);
+    transform: translateY(-50%);
+}
+
+#mathsChapterlast {
+    top: calc(5% + 50px);
+    transform: translateY(-50%);
+}
+
+
+#physicsChapter {
+    top: calc(5% + 120px);
+    transform: translateY(-50%);
+}
+
+#physicsLast {
+    top: calc(5% + 170px);
+    transform: translateY(-50%);
+}
+
+#inorganicChapter {
+    top: calc(5% + 240px);
+    transform: translateY(-50%);
+}
+
+#ioclast {
+    top: calc(5% + 290px);
+    transform: translateY(-50%);
+}
+
+#physicalChapter {
+    top: calc(5% + 360px);
+    transform: translateY(-50%);
+}
+
+#polast {
+    top: calc(5% + 410px);
+    transform: translateY(-50%);
+}
+
+#organicChapter {
+    top: calc(5% + 480px);
+    transform: translateY(-50%);
+}
+
+#oclast {
+    top: calc(5% + 530px);
+    transform: translateY(-50%);
+}
+
+
+#dashboard,
+#doubts,
+#announcement,
+#dppBattle,
+#moduleLink,
+#liveClassLink,
+#test,
+#periodicTable,
+#Test_Planner {
+    margin-top: 100px;
+    position: absolute;
+    right: 10px;
+}
+
+#liveClassLink {
+    top: calc(5%);
+    transform: translateY(-50%);
+    background-color: #e91f1e;
+    color: #ddd;
+}
+
+#test {
+    top: calc(5% + 60px);
+    transform: translateY(-50%);
+}
+
+#dashboard {
+    top: calc(5% + 120px);
+    transform: translateY(-50%);
+}
+
+
+#announcement {
+    top: calc(5% + 180px);
+    transform: translateY(-50%);
+}
+
+#dppBattle {
+    top: calc(5% + 240px);
+    transform: translateY(-50%);
+}
+
+#moduleLink {
+    top: calc(5% + 300px);
+    transform: translateY(-50%);
+}
+
+#doubts {
+    top: calc(5% + 360px);
+    transform: translateY(-50%);
+}
+
+#periodicTable {
+    top: calc(5% + 420px);
+    transform: translateY(-50%);
+}
+
+#Test_Planner {
+    top: calc(5% + 480px);
+    transform: translateY(-50%);
+
+}
+
+.date {
+    position: absolute;
+    top: 25px;
+    right: 0px;
+    font-size: 18px;
+}
+
+.hoursLeft {
+    position: absolute;
+    top: 50px;
+    font-size: 18px;
+    right: 0px;
+    /* transform: translateY(0%); */
+    color: aqua
+}
+
+.countdown {
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    font-size: 20px;
+    transform: translate(19%, 41%);
+    color: rgb(30, 255, 0);
+}
+
+
+.links {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.links a {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 200px;
+    background-color: #30b8b8;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+.links a:hover {
+    background-color: #ddd;
+}
+
+table {
+    
+    margin-top: 35px;
+    font-size: 17px;
+    width: 55%;
+    border-collapse: separate;
+    border-spacing: 0;
+    color: #f0f0f0;
+    background-color: #000033;
+    border-radius: 10px;
+    /* position: fixed !important; */
+
+}
+
+thead tr th {
+    color: #000000;
+    background-color: #30b8b8;
+    text-align: center;
+    border-bottom: 2px solid #000000;
+}
+
+td,
+th {
+    padding: 15px;
+    text-align: left;
+    border-right: 2px solid #000000;
+}   
+
+td:last-child,
+th:last-child {
+    border-right: none; 
+}
+
+tr {
+    border: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: #000033;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(18, 16, 62);
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+table tr:first-child th:first-child {
+    border-top-left-radius: 10px;
+}
+
+table tr:first-child th:last-child {
+    border-top-right-radius: 10px;
+}
+
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+
+
+@media (max-width: 1250px) {
+    body {
+        flex-direction: column;
+        margin: 20px 0px 30px;
+        height: auto;
+
+    }
+
+    .date,
+    .countdown {
+        top: 0px;
+    }
+
+    .greeting {
+        margin-top: 50px;
+    }
+
+    table {
+        margin-top: 20px;
+        font-size: 17px;
+        width: 55%;
+    }
+
+    #mathsChapternow {
+        top: calc(8%);
+        transform: translateY(-50%);
+    }
+
+    #mathsChapterlast {
+        top: calc(9% + 40px);
+        transform: translateY(-50%);
+    }
+
+    #physicsChapter {
+        top: calc(15% + 90px);
+        transform: translateY(-50%);
+    }
+
+    #physicalChapter {
+        top: calc(15% + 180px);
+        transform: translateY(-50%);
+    }
+
+    #inorganicChapter {
+        top: calc(15% + 270px);
+        transform: translateY(-50%);
+    }
+
+    #organicChapter {
+        top: calc(15% + 360px);
+        transform: translateY(-50%);
+    }
+}
+
+
+@media (max-width: 1024px) {
+    body {
+        flex-direction: column;
+        margin: 20px 0px 30px;
+        height: auto;
+    }
+
+    .alert {
+        /* position: none; */
+        display: none;
+    }
+
+    .date,
+    .countdown,
+    .hoursLeft {
+        font-size: 15px;
+    }
+
+
+    .date,
+    .countdown {
+        top: 0px;
+    }
+
+    .greeting {
+        font-size: 20px;
+        margin-top: 50px;
+    }
+
+    table {
+        margin-top: 20px;
+        font-size: 18px;
+        width: 90%;
+    }
+
+    #liveClassLink,
+    #physicsChapter,
+    #physicalChapter,
+    #inorganicChapter,
+    #organicChapter,
+    #mathsChapternow,
+    #mathsChapterlast,
+    #dashboard,
+    #doubts,
+    #announcement,
+    #dppBattle,
+    #moduleLink,
+    #test,
+    #periodicTable,
+    #physicsLast,
+    #ioclast,
+    #polast,
+    #oclast,
+    #Test_Planner {
+        display: block;
+        position: static;
+        width: 150px;
+        height: 100%;
+        transform: none;
+        text-align: center;
+        font-size: 15px;
+        padding: auto;
+        margin: 10px;
+
+    }
+
+    .links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .hoursLeft {
+        left: 40px;
+        top: 40px;
+        /* font-size: 15px; */
+    }
+
+
+}
+
+.alert {
+    padding: 15px;
+    /* position: absolute; */
+    background-color: #2ad32f;
+    color: rgb(0, 0, 0);
+    border: 0px;
+    border-radius: 30px;
+    margin-top: 20px;
+    /* text-align: center; */
+    /* transform: translateY(-474%); */
+    /* top: 35px; */
+    /* right: -100%; */
+    transition: right 0.3s ease;
+
+        /* position: fixed; */
+        top: 0px;
+        left: 50%;
+        /* Start at the horizontal center */
+        transform: translateX(-50%);
+        /* Center horizontally */
+        /* background-color: #f8f8f8; */
+        /* padding: 10px; */
+        transition: top 0.3s ease;
+        /* Smooth transition effect */
+        width: auto;
+    
+
+}
+
+.alert {
+    position: fixed;
+
+}
+
+/* Style the close button */
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+    color: black;
+}
+
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #040549;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    background-color: #05f9d0;
+    padding: 10px;
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    border: 0px;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    /* font-weight: bold; */
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    background: linear-gradient(45deg, #e9e62a, #da273f, #dddddd);
+    background-size: 200% 200%;
+    box-shadow: 0 4px 6px rgba(211, 196, 196, 0.658);
+    transition: background-position 0.2s ease;
+    transition: background-color 0.2s ease, color 0.4s ease;
+}
+
+button:hover {
+    background-color: #000033;
+    background-color: #2980b9;
+    color: #eee;
+    background-position: 100% 100%; 
+    box-shadow: 0 8px 12px rgb(233, 228, 228);
+
+    color: whitesmoke;
+
+}
